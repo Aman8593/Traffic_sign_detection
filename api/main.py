@@ -266,7 +266,7 @@ def remove_other_color(img):
 def main():
     clean_images()
     model = training()
-    file_name = "MVI_1049.avi"
+    file_name = "https://cv-vid-proj-2024.s3.ap-south-1.amazonaws.com/MVI_1049.avi"
     vidcap = cv2.VideoCapture(file_name)
 
     fps = vidcap.get(cv2.CAP_PROP_FPS)
@@ -450,8 +450,6 @@ def Send_complete_video():
     else:
         raise HTTPException(status_code=404, detail="Video file not found")
     
-
-git
 
 
 
